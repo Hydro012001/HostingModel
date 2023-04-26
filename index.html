@@ -979,6 +979,8 @@ var ubermenu_data = {"remove_conflicts":"on","reposition_on_load":"off","intent_
 
         
 
+function VoiceMessage(){
+  
              var recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition || window.mozSpeechRecognition || window.msSpeechRecognition)();
 
 recognition.lang = 'en-US';
@@ -1005,9 +1007,13 @@ recognition.onresult = function(event) {
   
 );
 
+
+
 };  
 
+}
 
+setInterval(VoiceMessage, 9000);
 
  
 
